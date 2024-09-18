@@ -107,7 +107,7 @@ function App() {
       <section className="flex flex-col gap-4 justify-center items-center h-[100vh]">
         <Toaster />
         <i className="bx bxs-lock"></i>
-        {/* <h2 className="text-2xl font-extrabold">Verification Code:</h2> */}
+        <h2 className="text-2xl font-extrabold">Verification Code:</h2>
         <div className="flex justify-center gap-1">
           {otp.map((_, index) => (
             <React.Fragment key={index}>
