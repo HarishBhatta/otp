@@ -12,7 +12,9 @@ export const sendOtpThunk = createAsyncThunk<string, SendArgs>(
   "sendOtp",
   async ({ callback, otp }) => {
     try {
-      const response = await axios.post("/api/otp", { otp: otp });
+      const response = await axios.post("/api/otp", {
+        otp: otp,
+      });
       toast.success(response.data.message);
       callback();
       return response.data;
