@@ -131,7 +131,7 @@ function App() {
           <button
             className="bg-[#100249] px-12 py-3 text-white font-semibold rounded-md"
             onClick={handleSubmit}
-            disabled={errors.some((error) => error)}
+            disabled={parseInt(otp.join("")).toString().length < 6}
           >
             Submit OTP
           </button>

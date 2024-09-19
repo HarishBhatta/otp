@@ -3,9 +3,9 @@ import react from "@vitejs/plugin-react";
 
 export default defineConfig({
   plugins: [react()],
-  server: {
-    proxy: {
-      "/api": "https://otp-backend-r80l.onrender.com",
-    },
-  },
+  // server: {
+  //   proxy: {
+  //     "/api": "https://otp-backend-r80l.onrender.com",
+  //   },
+  // },
 });
